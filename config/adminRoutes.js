@@ -1,0 +1,93 @@
+import Icon, {
+  ClusterOutlined,
+  ScheduleOutlined,
+  WalletOutlined,
+  DashboardOutlined,
+  AppstoreAddOutlined,
+  ApartmentOutlined,
+  ShopOutlined,
+  GiftOutlined,
+  BarChartOutlined,
+  UsergroupAddOutlined,
+  UnorderedListOutlined,
+  TagsOutlined,
+  EditOutlined,
+  TeamOutlined,
+  WarningOutlined,
+  QrcodeOutlined,
+  FundOutlined,
+  PhoneOutlined,
+  ControlOutlined,
+} from '@ant-design/icons';
+
+export const admin = [
+  {
+    name: 'Dashboard',
+    path: '/admin/dashboard',
+    icon: <DashboardOutlined />,
+  },
+  {
+    name: 'Manage Provinces',
+    path: '/manage-provinces',
+    icon: <ClusterOutlined />,
+    component: './pages/admin/manage-provinces',
+  },
+  {
+    name: 'Manage Places',
+    path: '/manage-places',
+    component: './pages/admin/manage-places',
+    icon: <ControlOutlined />,
+  },
+  {
+    name: 'Verification Requests',
+    path: '/verification-requests',
+    icon: <ScheduleOutlined />,
+  },
+  {
+    name: 'Wallet Transactions',
+    path: '/wallet-transactions',
+    icon: <WalletOutlined />,
+  },
+  {
+    name: 'Primary Categories',
+    path: '/primary-categories',
+    icon: <ApartmentOutlined />,
+    component: './admin/primary-categories',
+  },
+  {
+    name: 'Sub Categories',
+    path: '/subcategories-table',
+    component: './admin/subcategories-table',
+    icon: <AppstoreAddOutlined />,
+  },
+  {
+    name: 'Offer Types',
+    path: '/offer-types',
+    component: './admin/offer-types',
+    icon: <GiftOutlined />,
+  },
+  {
+    name: 'Admins',
+    path: '/admin-tables',
+    component: './admin/admin-tables',
+    icon: <UsergroupAddOutlined />,
+  },
+  {
+    name: 'Admin News/Articles',
+    path: '/admin-news-articles',
+    component: './admin/news-articles',
+    icon: <UnorderedListOutlined />,
+  },
+  {
+    name: 'Emergency',
+    path: '/admin/update-emergency-number',
+    component: './admin/emergency-numbers',
+    icon: <EditOutlined />,
+  },
+  {
+    name: 'Calamity Posts',
+    path: '/admin/calamity-posts',
+    component: './admin/calamity-posts',
+    icon: <WarningOutlined />,
+  },
+];
